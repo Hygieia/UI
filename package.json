@@ -35,7 +35,7 @@
     "@types/jest": "^25.2.3",
     "@types/lodash": "^4.14.165",
     "bootstrap": "^4.5.3",
-    "browserslist": "^4.16.3",
+    "browserslist": "^4.16.5",
     "codemirror": "^5.58.2",
     "core-js": "^2.6.11",
     "d3-scale": "^3.2.3",
