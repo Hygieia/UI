@@ -1,0 +1,11 @@
+<div class="overflow-auto">
+  <!--  <div class="modal-content-main">-->
+  <table class ="table-content" style="background-color: black;" modalTypeTag>
+    
+    <tr *ngFor="let item of data | keyvalue"  style="color: white; column-count: 2" >
+      <td class="tableName "> {{item.key}} -</td> 
+      <td class="tableName "> {{item.value}}</td> 
+    </tr>
+  </table>
+  <!--  </div>-->
+</div>

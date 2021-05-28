@@ -1,0 +1,44 @@
+  <div class="modal-body">
+<form [formGroup]="dockerConfigForm" (ngSubmit)="submitForm()">
+    <div class="container">
+      <div class="form-group">
+        <label class="modal-label" for="apiToken">Instance URL</label>
+        <div class="input-group mb-3">
+          <input id="instanceURL" type="text" class="form-control" placeholder="Instance URL" aria-label="Instance URL"
+              formControlName="instanceURL" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="modal-label" for="description">Instance PORT</label>
+        <div class="input-group mb-3">
+          <input id="instancePort"  class="form-control" placeholder="Port" aria-label="Port"
+              formControlName="instancePort" >
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="modal-label" for="apiToken">API Token</label>
+        <div class="input-group mb-3">
+          <input id="apiToken" type="text" class="form-control" placeholder="API Token" aria-label="API Token"
+              formControlName="apiToken" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="modal-label" for="description">Description</label>
+        <div class="input-group mb-3">
+          <textarea id="description"  class="form-control" placeholder="Description" aria-label="Description"
+              formControlName="description" ></textarea>
+        </div>
+      </div>
+    </div>
+  <div class="modal-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <button class="btn btn-primary btn-lg" [disabled]="!dockerConfigForm.valid">
+            Save Details
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
